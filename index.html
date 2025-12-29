@@ -1,68 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scientific Graphing Calculator</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/dist/chartjs-plugin-zoom.min.js"></script>
-</head>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scientific Graphing Calculator</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon X Calculator</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="calculator">
-      <h2>Scientific Graphing Calculator</h2>
-      <input type="text" id="display" disabled />
-      <div class="buttons">
-        <button>C</button>
-        <button>(</button>
-        <button>)</button>
-        <button>/</button>
 
-        <button>sin</button>
-        <button>cos</button>
-        <button>tan</button>
-        <button>*</button>
+<canvas id="particles"></canvas>
 
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>-</button>
-
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>+</button>
-
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>x²</button>
-
-        <button>0</button>
-        <button>.</button>
-        <button>π</button>
-        <button>=</button>
-      </div>
-    </div>
-
-    <div class="graph-panel">
-      <h3>Plot Function</h3>
-      <div class="plot-input">
-        <input id="function-input" type="text" placeholder="Enter function e.g. sin(x), x^2, log(x)" />
-        <button id="plot-btn">Plot</button>
-      </div>
-      <canvas id="graph"></canvas>
-    </div>
+<div class="calculator">
+  <div id="display">0</div>
+  <div class="buttons">
+    <button class="op">C</button><button class="op">/</button><button class="op">*</button><button class="op">←</button>
+    <button>7</button><button>8</button><button>9</button><button class="op">-</button>
+    <button>4</button><button>5</button><button>6</button><button class="op">+</button>
+    <button>1</button><button>2</button><button>3</button><button class="equal">=</button>
+    <button class="zero">0</button><button>.</button>
   </div>
+</div>
 
-  <script src="script.js"></script>
+<audio id="click" src="https://assets.mixkit.co/sfx/preview/mixkit-soft-click-1129.mp3"></audio>
+<script src="script.js"></script>
 </body>
 </html>
