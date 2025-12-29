@@ -3,25 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Neon X Calculator</title>
+<title>Neon Scientific Calculator</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<canvas id="particles"></canvas>
+<div class="bg"></div>
 
 <div class="calculator">
+  <div class="history" id="history"></div>
   <div id="display">0</div>
+
   <div class="buttons">
-    <button class="op">C</button><button class="op">/</button><button class="op">*</button><button class="op">←</button>
-    <button>7</button><button>8</button><button>9</button><button class="op">-</button>
-    <button>4</button><button>5</button><button>6</button><button class="op">+</button>
-    <button>1</button><button>2</button><button>3</button><button class="equal">=</button>
-    <button class="zero">0</button><button>.</button>
+    <button class="op">C</button>
+    <button class="op">√</button>
+    <button class="op">x²</button>
+    <button class="op">%</button>
+
+    <button class="op">sin</button>
+    <button class="op">cos</button>
+    <button class="op">tan</button>
+    <button class="op">π</button>
+
+    <button>7</button><button>8</button><button>9</button><button class="op">/</button>
+    <button>4</button><button>5</button><button>6</button><button class="op">*</button>
+    <button>1</button><button>2</button><button>3</button><button class="op">-</button>
+    <button class="zero">0</button><button>.</button><button class="equal">=</button><button class="op">+</button>
   </div>
 </div>
 
-<audio id="click" src="https://assets.mixkit.co/sfx/preview/mixkit-soft-click-1129.mp3"></audio>
 <script src="script.js"></script>
 </body>
 </html>
